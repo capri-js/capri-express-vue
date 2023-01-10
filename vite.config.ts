@@ -6,7 +6,9 @@ export default defineConfig({
   plugins: [
     vue(),
     capri({
-      spa: "/preview",
+      //spa: "/preview",
+      prerender: false,
+      target: "src/ssr.js",
     }),
   ],
 });
